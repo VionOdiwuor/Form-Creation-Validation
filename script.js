@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const feedbackDiv = document.getElementById('feedbackDiv');
     feedbackDiv.style.display = 'block';
     if (isValid){
-        feedbackDiv.textContent = "Registration Successful"
+        feedbackDiv.textContent = "Registration successful"
         feedbackDiv.style.color ="#dc3545";
     } else{
         feedbackDiv.innerHTML= messages.join('<br>');
