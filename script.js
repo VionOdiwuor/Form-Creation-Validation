@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
     let isValid = true;
-    const messages = [];
+    let messages = [];
     if (username.length < 3) isValid = false;
     messages.push("Username must be at least 3 characters long.");
     if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(emailInput.value))
