@@ -18,10 +18,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     messages.push("Email must be a valid email address.");
     if (password.length < 8) isValid = false;
     messages.push("Password must be at least 8 characters long.");
+    const feedbackDiv = document.getElementById('feedbackDiv');
   
-    feedbackDiv.style.display ="block";
+    feedbackDiv.style.block = "block";
     if (isValid){
-        feedbackDiv.textContent = "Registration Successful"
+        feedbackDiv.textContent = "Registration Successful";
         feedbackDiv.style.color ="#28a745";
     } else{
         feedbackDiv.innerHTML= messages.join('<br>');
