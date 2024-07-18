@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const username = usernameInput.value.trim();
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
-    const isValid = true;
+    let isValid = true;
     const messages = [];
     if (username.length < 3) isValid = false;
     messages.push("Username must be at least 3 characters long.");
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (password.length < 8) isValid = false;
     messages.push("Password must be at least 8 characters long.");
     const feedbackDiv = document.getElementById('feedbackDiv');
-  
     feedbackDiv.style.block = "block";
     if (isValid){
         feedbackDiv.textContent = "Registration Successful";
